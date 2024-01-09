@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./header.module.css";
 import HeaderBackground from "./headerBackground";
+import NavLink from "./navLink";
 
 export default function Header() {
   return (
@@ -13,14 +14,13 @@ export default function Header() {
           <Image src={logoImg} alt="logo" priority />
           NextLevel Food
         </Link>
-
         <nav className={styles.nav}>
           <ul>
             <li>
-              <Link href={"/meals"}>Browse Meals</Link>
+              <NavLink href={"/meals"}>Browse Meals</NavLink>
             </li>
             <li>
-              <Link href={"/community"}>Foodies Community</Link>
+              <NavLink href={"/community"}>Foodies Community</NavLink>
             </li>
           </ul>
         </nav>
