@@ -1,4 +1,4 @@
-import Header from "@/ui/shared/header/header";
+import Header from "@/ui/shared/header/Header";
 import "./globals.css";
 
 export const metadata = {
